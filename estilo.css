@@ -49,6 +49,7 @@
 }
 .body {
     /* grid-area: body; */
+    font-family: "Inter",sans-serif;
     text-align: center;
     align-content: center;
     display: flex;
