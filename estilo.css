@@ -1,5 +1,5 @@
 /* Vista movil */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .layout {
     width: 360px;
     height: 800px;
@@ -31,7 +31,7 @@
 
   .videos {
     width: 100%;
-    display: flex;
+    /*display: flex;*/
     gap: 16px;
     flex-wrap: wrap;
   }
