@@ -56,23 +56,20 @@
         </div>
         <div class="rightSide"></div>
         <div class="footer">
-            <div ng-if="state.current().name == 'home' &amp;&amp; 'landing' == 'landing'">
-                <div class="footer">
-                    <a href="http://conekta.com/" target="_blank" title="Paga con Conekta"><img alt="Conekta Logo"
-                            src="https://conekta.com/static/assets/Home/conekta-logo-white-desktop.svg"> </a>
-                    <a href="https://conekta.com/about-us" style="color: white;" target="_blank"
-                        title="Paga con Conekta, somos tecnólogos.">Nosotros</a>
-                    <a dir="ltr" href="/page/pruebas" style="color: white;"
-                        title="Pruebas de desarrollo, integra y paga con Conekta" target="_self">Tarjetas de Pruebas</a>
-                    <a href="/page/webhooks" style="color: white;" target="_blank"
-                        title="Configuración de webhooks, integra y paga con Conekta">Webhooks</a>
-                    <a href="/discuss" style="color: white;" target="_blank" title="Paga con Conekta">Foro</a>
-                    <a href="https://help.conekta.com/hc/es-419/requests/new" style="color: white;" target="_blank"
-                        title="Paga con Conekta">Contáctanos</a>
-                </div>
-            </div>
+            <nav id='foot'>
+                <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                <ul>
+                    <li>
+                        <img src="https://conekta.com/static/assets/Home/conekta-logo-white-desktop.svg" id='logo'>
+                    </li>
+                    <li><a href='https://conekta.com/about-us'>Nosotros</a></li>
+                    <li><a href='https://developers.conekta.com/page/pruebas'>Tarjetas de prueba</a></li>
+                    <li><a href='https://developers.conekta.com/page/webhooks'>WebHooks</a></li>
+                    <li><a href='https://developers.conekta.com/discuss'>Foro</a></li>
+                    <li><a href='https://help.conekta.com/hc/es-419/requests/new'>Contáctanos</a></li>
+                </ul>
+            </nav>
         </div>
     </section>
 </body>
-
 </html>
