@@ -47,10 +47,11 @@
         "footer footer footer" auto / auto 1fr auto;
     /* gap: 8px; */
 }
+  
+  * {font-family: "Inter",sans-serif;}  
 
 .body {
     /* grid-area: body; */
-    font-family: "Inter",sans-serif;
     text-align: center;
     align-content: center;
     display: flex;
