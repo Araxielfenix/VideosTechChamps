@@ -5,8 +5,7 @@
     height: 800px;
 
     display: grid;
-  }
-  grid:{
+    grid:
       "header header header" auto
       "leftSide body rightSide" 1fr
       "footer footer footer" auto
