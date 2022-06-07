@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -30,13 +31,45 @@
         <div class="leftSide"></div>
         <div class="body">
             <section class="videos">
-                <div class="grow1">
+                <div class="grow1" onclick="showShopifyVideos()">
                     <h1>Shopify</h1>
                     <img src="https://files.readme.io/10d1566-shopify-gray.svg" alt="Shopify">
                 </div>
-                <div class="grow1">
+                <div id="videosShopify">
+                    <ul style="list-style: none inside;">
+                        <li>
+                            <h1>Integrar Conekta + Shopify (plugin viejo)</h1>
+                            <input type="url" value="https://youtu.be/q6hYktEMCHY" disabled>
+                        </li>
+                        <li>
+                            <h1>Desinstala nuestros plugins anteriores de Shopify</h1>
+                            <input type="url" value="https://youtu.be/rNGRUqFTLFg" disabled>
+                        </li>
+                        <li>
+                            <h1>Desinstala nuestro plugin para Shopify (Plugin nuevo)</h1>
+                            <input type="url" value="https://youtu.be/tM0tW8o6DE4" disabled>
+                        </li>
+                        <li>
+                            <h1>Instala nuestro plugin para Shopify (Plugin nuevo)</h1>
+                            <input type="url" value="https://youtu.be/xX0ftO9NGYU" disabled>
+                        </li>
+                        <li>
+                            <h1>Activa los pagos con tarjeta y meses sin intereses en Shopify (Nuevo plugin)</h1>
+                            <input type="url" value="https://youtu.be/4wFbtQZs3d8" disabled>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grow1" onclick="showWCVideos()">
                     <h1>WooCommerce</h1>
                     <img src="https://files.readme.io/ce76fc1-woocommerce-gray.svg" alt="WooCommerce" id="WP">
+                </div>
+                <div id="videosWC">
+                    <ul style="list-style: none inside;">
+                        <li>
+                            <h1>Integrar Conekta + WooCommerce</h1>
+                            <input type="url" value="https://youtu.be/CgOAQIC0cx0" disabled>
+                        </li>
+                    </ul>
                 </div>
                 <div class="grow1">
                     <h1>VTEX</h1>
@@ -51,6 +84,14 @@
                     <h1>PrestaShop</h1>
                     <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/prestashop-48px-greyscale.svg"
                         alt="PrestaShop">
+                </div>
+                <div id="videosPS">
+                    <ul style="list-style: none inside;">
+                        <li>
+                            <h1>Integrar Conekta + Prestashop</h1>
+                            <input type="url" value="https://youtu.be/wH8Dy9OB5JY" disabled>
+                        </li>
+                    </ul>
                 </div>
                 <div class="grow1">
                     <h1>TiendaNube</h1>
