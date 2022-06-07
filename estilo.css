@@ -383,7 +383,6 @@ html {
 }
 .footer {
   bottom: 5;
-  position: fixed;
 }
 #theme{
   background-color: transparent;
