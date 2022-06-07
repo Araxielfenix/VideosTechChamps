@@ -398,7 +398,7 @@ html {
   color: #ffffff;
 }
 .footer {
-  position: relative;
+  position: absolute;
   margin: 30px auto;
   bottom: 5;
 }

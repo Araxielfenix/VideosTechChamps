@@ -14,12 +14,16 @@ function showShopifyVideos() {
 
         document.getElementById("videosLeft").style.display = "grid";
         document.getElementById("videosCenter").style.display = "none";
+
+        document.getElementById("footernav").style.position = "relative";
     }
     else if (document.getElementById("videosShopify").style.display == "grid" && document.getElementById("videosLeft").style.display == "grid"){
         document.getElementById("videosShopify").style.display = "none";
 
         document.getElementById("videosLeft").style.display = "none";
         document.getElementById("videosCenter").style.display = "grid";
+
+        document.getElementById("footernav").style.position = "absolute";
     }
 }
 function showWCVideos() {
@@ -30,12 +34,16 @@ function showWCVideos() {
 
         document.getElementById("videosLeft").style.display = "grid";
         document.getElementById("videosCenter").style.display = "none";
+        
+        document.getElementById("footernav").style.position = "relative";
     }
     else if (document.getElementById("videosWC").style.display == "grid" && document.getElementById("videosLeft").style.display == "grid"){
         document.getElementById("videosWC").style.display = "none";
 
         document.getElementById("videosLeft").style.display = "none";
         document.getElementById("videosCenter").style.display = "grid";
+
+        document.getElementById("footernav").style.position = "absolute";
     }
 }
 function showPSVideos(){
@@ -46,12 +54,16 @@ function showPSVideos(){
 
         document.getElementById("videosLeft").style.display = "grid";
         document.getElementById("videosCenter").style.display = "none";
+
+        document.getElementById("footernav").style.position = "relative";
     }
     else if (document.getElementById("videosPS").style.display == "grid" && document.getElementById("videosLeft").style.display == "grid"){
         document.getElementById("videosPS").style.display = "none";
 
         document.getElementById("videosLeft").style.display = "none";
         document.getElementById("videosCenter").style.display = "grid";
+
+        document.getElementById("footernav").style.position = "absolute";
     }
 }
 
