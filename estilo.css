@@ -26,6 +26,7 @@
   }
   .footer {
     grid-area: footer;
+    width: 96.5%;
   }
 
   .videos {
@@ -37,20 +38,22 @@
 }
 /* Vista escritorio */
 @media only screen and (min-width: 768px) {
-.layout {
+  .layout {
     width: 100%;
     /* height: 1080px; */
     /* display: grid; */
     grid:
-        "header header header" auto
-        "leftSide body rightSide" 1fr
-        "footer footer footer" auto / auto 1fr auto;
+      "header header header" auto
+      "leftSide body rightSide" 1fr
+      "footer footer footer" auto / auto 1fr auto;
     /* gap: 8px; */
-}
-  
-  * {font-family: "Inter",sans-serif;}  
+  }
 
-.body {
+  * {
+    font-family: "Inter", sans-serif;
+  }
+
+  .body {
     /* grid-area: body; */
     text-align: center;
     align-content: center;
@@ -58,7 +61,7 @@
     justify-content: space-around;
     margin-top: 5rem;
   }
-  
+
   .header {
     grid-area: header;
   }
@@ -73,7 +76,10 @@
   }
   .footer {
     grid-area: footer;
-  }
+    bottom: 5;
+    width: 99%;
+    position: fixed;
+}
   .videos {
     width: 80%;
     display: grid;
@@ -86,7 +92,10 @@
     column-gap: 4rem;
     align-items: center;
     justify-items: stretch;
-}
+  }
+  #logo {
+    margin: 1.3vh 0vh;
+  }
 }
 
 html {
@@ -94,16 +103,16 @@ html {
 }
 
 #menu {
-  background-color: rgba(10, 20, 55, 0.90);
+  background-color: rgba(10, 20, 55, 0.87);
   backdrop-filter: saturate(180%) blur(20px);
   color: #fff;
   height: 45px;
   padding-left: 18px;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 #menu ul,
 #menu li {
-  margin: 0 auto;
+  margin: 0 7px;
   padding: 0;
   list-style: none;
 }
@@ -119,18 +128,17 @@ html {
   display: block;
   line-height: 45px;
   padding: 0 14px;
-  margin: auto 1.3vh;
   text-decoration: none;
   color: #ffffff;
   font-size: 16px;
 }
 #menu a.dropdown-arrow:after {
-  content: "\25BE";
+  content: "\23F7";
   margin-left: 5px;
 }
 #menu li a:hover {
-  color: white;
-  background: #e50695;
+  color: #ffffff;
+  background: #e40595;
 }
 #menu input {
   display: none;
@@ -157,7 +165,7 @@ html {
   height: auto;
   overflow: hidden;
   width: 170px;
-  background: #444444;
+  background: #0a1437;
   position: absolute;
   z-index: 99;
   display: none;
@@ -174,22 +182,73 @@ html {
   display: block;
 }
 #menu ul.sub-menus a:hover {
-  background: #f2f2f2;
-  color: #444444;
+  background: #e40595;
+  color: #ffffff;
 }
-
-#logo {
-  margin: 1.3vh 0vh;
+@media screen and (max-width: 800px) {
+  #menu {
+    position: relative;
+  }
+  #menu ul {
+    background-color: rgba(10, 20, 55, 0.75);
+    backdrop-filter: saturate(180%) blur(20px);
+    border: transparent;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    height: auto;
+    display: none;
+  }
+  #menu ul.sub-menus {
+    width: 100%;
+    position: static;
+  }
+  #menu ul.sub-menus a {
+    padding-left: 30px;
+  }
+  #menu li {
+    border: transparent;
+    background-color: rgba(10, 20, 55, 0.75);
+    backdrop-filter: saturate(180%) blur(20px);
+    display: block;
+    float: none;
+    width: auto;
+  }
+  #menu input,
+  #menu label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  #menu input {
+    z-index: 4;
+  }
+  #menu input:checked + label {
+    color: white;
+  }
+  #menu input:checked + label:before {
+    content: "\00d7";
+  }
+  #menu input:checked ~ ul {
+    margin: 0 auto;
+    display: block;
+  }
+  #logo {
+    margin: 1.3vh 15vh;
+  }
 }
 
 .grow1 {
-    /* flex-grow: 1; */
-    /* height: 14vh; */
-    text-align: center;
-    border: 1px solid #e50695;
-    border-radius: 4px;
-    border-color: rgba(10, 20, 55, 0.90);
-    height: 10rem;
+  /* flex-grow: 1; */
+  /* height: 14vh; */
+  text-align: center;
+  border: 1px solid #e50695;
+  border-radius: 4px;
+  border-color: rgba(10, 20, 55, 0.9);
+  height: 10rem;
 }
 
 .grow1:hover {
@@ -197,7 +256,7 @@ html {
   color: white;
   border: 1px solid #e50695;
   border-radius: 4px;
-  border-color: rgba(10, 20, 55, 0.90);
+  border-color: rgba(10, 20, 55, 0.9);
 }
 
 #WP {
@@ -211,94 +270,90 @@ html {
 #tiendanube {
   width: 25%;
 }
-
-.footer{
-  bottom: 2;
-  width: 99%;
-  position: fixed;
-}
-
 #foot {
-  background-color: rgba(10, 20, 55, 0.90);
+	background-color: rgba(10, 20, 55, 0.87);
   backdrop-filter: saturate(180%) blur(20px);
   color: #fff;
   height: 45px;
   padding-left: 18px;
-  border-radius: 4px;
+  border-radius: 10px;
 }
-#foot ul,
-#foot li {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
+#foot ul, #foot li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
 }
 #foot ul {
-  width: 100%;
+	width: 100%;
 }
 #foot li {
-  float: left;
-  display: inline;
-  position: relative;
+	float: left;
+	display: inline;
+	position: relative;
 }
 #foot a {
-  display: block;
-  line-height: 45px;
-  padding: 0 14px;
-  margin: auto 1.3vh;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
 }
 #foot a.dropdown-arrow:after {
-  content: "\25BE";
-  margin-left: 5px;
+	content: "\23F7";
+	margin-left: 5px;
 }
 #foot li a:hover {
-  color: white;
-  background: #e50695;
+	color: #FFFFFF;
+	background: #E40595;
 }
 #foot input {
-  display: none;
-  margin: 0;
-  padding: 0;
-  height: 45px;
-  width: 100%;
-  opacity: 0;
-  cursor: pointer;
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
 }
 #foot label {
-  display: none;
-  line-height: 45px;
-  text-align: center;
-  position: absolute;
-  left: 35px;
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
 }
 #foot label:before {
-  font-size: 1.6em;
-  content: "\2261";
-  margin-left: 20px;
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
 }
-#foot ul.sub-foots {
-  height: auto;
-  overflow: hidden;
-  width: 170px;
-  background: #444444;
-  position: absolute;
-  z-index: 99;
-  display: none;
+#foot ul.sub-foots{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background-color: rgba(10, 20, 55, 0.87);
+  backdrop-filter: saturate(180%) blur(20px);
+	position: absolute;
+	z-index: 99;
+	display: none;
 }
 #foot ul.sub-foots li {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
 }
 #foot ul.sub-foots a {
-  color: #ffffff;
-  font-size: 16px;
+	color: #FFFFFF;
+	font-size: 16px;
 }
 #foot li:hover ul.sub-foots {
-  display: block;
+	display: block
 }
-#foot ul.sub-foots a:hover {
-  background: #f2f2f2;
-  color: #444444;
+#foot ul.sub-foots a:hover{
+	background: #E40595;
+	color: #FFFFFF;
+}
+.footer {
+  bottom: 5;
+  position: fixed;
 }
