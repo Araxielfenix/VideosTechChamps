@@ -22,7 +22,7 @@ function showWCVideos() {
         document.getElementById("videosWC").style.display = "none";
     }
 }
-function shopPSVideos(){
+function showPSVideos(){
     if(document.getElementById("videosPS").style.display == "none"){
         document.getElementById("videosPS").style.display = "block";
     }
