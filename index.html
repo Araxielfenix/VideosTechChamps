@@ -1,148 +1,234 @@
 <!-- HTML5 -->
 <html lang="en">
-
-<head>
+  <head>
     <title>Videos Tech Champs</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
     <script src="script.js"></script>
-</head>
+  </head>
 
-<body>
-    <nav id='menu'>
-        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-        <ul>
-            <li>
-                <img src="https://conekta.com/static/assets/Home/conekta-logo-white-desktop.svg" id='logo'>
-            </li>
-            <li><a href='index.html'>Inicio</a></li>
-            <li><a href='https://conekta.com/about-us'>Nosotros</a></li>
-            <li><a href='https://developers.conekta.com/page/pruebas'>Tarjetas de prueba</a></li>
-            <li><a href='https://developers.conekta.com/page/webhooks'>Webhooks</a></li>
-            <li><a href='https://developers.conekta.com/discuss'>Foro</a></li>
-            <li><a href='https://help.conekta.com/hc/es-419/requests/new'>Contáctanos</a></li>
-        </ul>
+  <body>
+    <nav id="menu">
+      <input
+        type="checkbox"
+        id="responsive-menu"
+        onclick="updatemenu()"
+      /><label></label>
+      <ul>
+        <li>
+          <img
+            src="https://conekta.com/static/assets/Home/conekta-logo-white-desktop.svg"
+            id="logo"
+          />
+        </li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="https://conekta.com/about-us">Nosotros</a></li>
+        <li>
+          <a href="https://developers.conekta.com/page/pruebas"
+            >Tarjetas de prueba</a
+          >
+        </li>
+        <li>
+          <a href="https://developers.conekta.com/page/webhooks">Webhooks</a>
+        </li>
+        <li><a href="https://developers.conekta.com/discuss">Foro</a></li>
+        <li>
+          <a href="https://help.conekta.com/hc/es-419/requests/new"
+            >Contáctanos</a
+          >
+        </li>
+      </ul>
     </nav>
     <section class="layout">
-        <div class="header">
+      <div class="header"></div>
+      <div class="leftSide">
+        <div id="videosLeft">
+          <div class="grow1" onclick="showShopifyVideos()">
+            <h1>Shopify</h1>
+            <img
+              src="https://files.readme.io/10d1566-shopify-gray.svg"
+              alt="Shopify"
+            />
+          </div>
+          <div class="grow1" onclick="showWCVideos()">
+            <h1>WooCommerce</h1>
+            <img
+              src="https://files.readme.io/ce76fc1-woocommerce-gray.svg"
+              alt="WooCommerce"
+              id="WP"
+            />
+          </div>
+          <div class="grow1">
+            <h1>VTEX</h1>
+            <img
+              src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/VTEX_Logo.svg"
+              alt="VTEX"
+              id="VTEX"
+            />
+          </div>
+          <div class="grow1">
+            <h1>Magento</h1>
+            <img
+              src="https://files.readme.io/dc16368-magento-gray.svg"
+              alt="Magento"
+            />
+          </div>
+          <div class="grow1" onclick="showPSVideos()">
+            <h1>PrestaShop</h1>
+            <img
+              src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/prestashop-48px-greyscale.svg"
+              alt="PrestaShop"
+            />
+          </div>
+          <div class="grow1">
+            <h1>TiendaNube</h1>
+            <img
+              src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/tiendanube_48_grey.svg"
+              alt="TiendaNube"
+              id="tiendanube"
+              style="border-radius: 59px"
+            />
+          </div>
         </div>
-        <div class="leftSide">
-            <div id="videosLeft">
-                <div class="grow1" onclick="showShopifyVideos()">
-                    <h1>Shopify</h1>
-                    <img src="https://files.readme.io/10d1566-shopify-gray.svg" alt="Shopify">
-                </div>
-                <div class="grow1" onclick="showWCVideos()">
-                    <h1>WooCommerce</h1>
-                    <img src="https://files.readme.io/ce76fc1-woocommerce-gray.svg" alt="WooCommerce" id="WP">
-                </div>
-                <div class="grow1">
-                    <h1>VTEX</h1>
-                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/VTEX_Logo.svg" alt="VTEX"
-                        id="VTEX">
-                </div>
-                <div class="grow1">
-                    <h1>Magento</h1>
-                    <img src="https://files.readme.io/dc16368-magento-gray.svg" alt="Magento">
-                </div>
-                <div class="grow1" onclick="showPSVideos()">
-                    <h1>PrestaShop</h1>
-                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/prestashop-48px-greyscale.svg"
-                        alt="PrestaShop">
-                </div>
-                <div class="grow1">
-                    <h1>TiendaNube</h1>
-                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/tiendanube_48_grey.svg"
-                        alt="TiendaNube" id="tiendanube" style="border-radius: 59px;">
-                </div>
-            </div>
-        </div>
-        <div class="body">
-            <section class="videos" id="videosCenter">
-                <div class="grow1" onclick="showShopifyVideos()">
-                    <h1>Shopify</h1>
-                    <img src="https://files.readme.io/10d1566-shopify-gray.svg" alt="Shopify">
-                </div>
-                <div class="grow1" onclick="showWCVideos()">
-                    <h1>WooCommerce</h1>
-                    <img src="https://files.readme.io/ce76fc1-woocommerce-gray.svg" alt="WooCommerce" id="WP">
-                </div>
-                <div class="grow1">
-                    <h1>VTEX</h1>
-                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/VTEX_Logo.svg" alt="VTEX"
-                        id="VTEX">
-                </div>
-                <div class="grow1">
-                    <h1>Magento</h1>
-                    <img src="https://files.readme.io/dc16368-magento-gray.svg" alt="Magento">
-                </div>
-                <div class="grow1" onclick="showPSVideos()">
-                    <h1>PrestaShop</h1>
-                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/prestashop-48px-greyscale.svg"
-                        alt="PrestaShop">
-                </div>
-                <div class="grow1">
-                    <h1>TiendaNube</h1>
-                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/tiendanube_48_grey.svg"
-                        alt="TiendaNube" id="tiendanube" style="border-radius: 59px;">
-                </div>
-            </section>
-            <section class = "videos" id="videosLinks">
-                <div >
-                    <ul id="videosShopify" style="list-style: none inside;">
-                        <li>
-                            <h1>Integrar Conekta + Shopify (plugin viejo)</h1>
-                            <input type="url" value="https://youtu.be/q6hYktEMCHY" disabled="" style="margin: 23px auto;">
-                        </li>
-                        <li>
-                            <h1>Desinstala nuestros plugins anteriores de Shopify</h1>
-                            <input type="url" value="https://youtu.be/rNGRUqFTLFg" disabled>
-                        </li>
-                        <li>
-                            <h1>Desinstala nuestro plugin para Shopify (Plugin nuevo)</h1>
-                            <input type="url" value="https://youtu.be/tM0tW8o6DE4" disabled>
-                        </li>
-                        <li>
-                            <h1>Instala nuestro plugin para Shopify (Plugin nuevo)</h1>
-                            <input type="url" value="https://youtu.be/xX0ftO9NGYU" disabled>
-                        </li>
-                        <li>
-                            <h1>Activa los pagos con tarjeta y meses sin intereses en Shopify (Nuevo plugin)</h1>
-                            <input type="url" value="https://youtu.be/4wFbtQZs3d8" disabled>
-                        </li>
-                    </ul>
-                </div>
-                <div id="videosWC">
-                    <ul style="list-style: none inside;">
-                        <li>
-                            <h1>Integrar Conekta + WooCommerce</h1>
-                            <input type="url" value="https://youtu.be/CgOAQIC0cx0" disabled>
-                        </li>
-                    </ul>
-                </div>
-                <div id="videosPS">
-                    <ul style="list-style: none inside;">
-                        <li>
-                            <h1>Integrar Conekta + Prestashop</h1>
-                            <input type="url" value="https://youtu.be/wH8Dy9OB5JY" disabled>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <div class="rightSide"></div>
-        <div class="footer" id="footernav">
-            <nav id='foot'>
-                <ul>
-                    <li>
-
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      </div>
+      <div class="body">
+        <section class="videos" id="videosCenter">
+          <div class="grow1" onclick="showShopifyVideos()">
+            <h1>Shopify</h1>
+            <img
+              src="https://files.readme.io/10d1566-shopify-gray.svg"
+              alt="Shopify"
+            />
+          </div>
+          <div class="grow1" onclick="showWCVideos()">
+            <h1>WooCommerce</h1>
+            <img
+              src="https://files.readme.io/ce76fc1-woocommerce-gray.svg"
+              alt="WooCommerce"
+              id="WP"
+            />
+          </div>
+          <div class="grow1">
+            <h1>VTEX</h1>
+            <img
+              src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/VTEX_Logo.svg"
+              alt="VTEX"
+              id="VTEX"
+            />
+          </div>
+          <div class="grow1">
+            <h1>Magento</h1>
+            <img
+              src="https://files.readme.io/dc16368-magento-gray.svg"
+              alt="Magento"
+            />
+          </div>
+          <div class="grow1" onclick="showPSVideos()">
+            <h1>PrestaShop</h1>
+            <img
+              src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/prestashop-48px-greyscale.svg"
+              alt="PrestaShop"
+            />
+          </div>
+          <div class="grow1">
+            <h1>TiendaNube</h1>
+            <img
+              src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/tiendanube_48_grey.svg"
+              alt="TiendaNube"
+              id="tiendanube"
+              style="border-radius: 59px"
+            />
+          </div>
+        </section>
+        <section class="videos" id="videosLinks">
+          <div>
+            <ul id="videosShopify" style="list-style: none inside">
+              <li>
+                <h1>Integrar Conekta + Shopify (plugin viejo)</h1>
+                <input
+                  type="url"
+                  value="https://youtu.be/q6hYktEMCHY"
+                  disabled=""
+                  style="margin: 23px auto"
+                />
+                <button class="copy">Copiar</button>
+              </li>
+              <li>
+                <h1>Desinstala nuestros plugins anteriores de Shopify</h1>
+                <input
+                  type="url"
+                  value="https://youtu.be/rNGRUqFTLFg"
+                  disabled
+                />
+              </li>
+              <li>
+                <h1>Desinstala nuestro plugin para Shopify (Plugin nuevo)</h1>
+                <input
+                  type="url"
+                  value="https://youtu.be/tM0tW8o6DE4"
+                  disabled
+                />
+              </li>
+              <li>
+                <h1>Instala nuestro plugin para Shopify (Plugin nuevo)</h1>
+                <input
+                  type="url"
+                  value="https://youtu.be/xX0ftO9NGYU"
+                  disabled
+                />
+              </li>
+              <li>
+                <h1>
+                  Activa los pagos con tarjeta y meses sin intereses en Shopify
+                  (Nuevo plugin)
+                </h1>
+                <input
+                  type="url"
+                  value="https://youtu.be/4wFbtQZs3d8"
+                  disabled
+                />
+              </li>
+            </ul>
+          </div>
+          <div id="videosWC">
+            <ul style="list-style: none inside">
+              <li>
+                <h1>Integrar Conekta + WooCommerce</h1>
+                <input
+                  type="url"
+                  value="https://youtu.be/CgOAQIC0cx0"
+                  disabled
+                />
+              </li>
+            </ul>
+          </div>
+          <div id="videosPS">
+            <ul style="list-style: none inside">
+              <li>
+                <h1>Integrar Conekta + Prestashop</h1>
+                <input
+                  type="url"
+                  value="https://youtu.be/wH8Dy9OB5JY"
+                  disabled
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="rightSide"></div>
+      <div class="footer" id="footernav">
+        <nav id="foot">
+          <ul>
+            <li></li>
+          </ul>
+        </nav>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>

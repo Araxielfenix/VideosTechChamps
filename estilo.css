@@ -125,7 +125,7 @@
   #logo {
     margin: 1.3vh 0vh;
   }
-  #videosLinks{
+  #videosLinks {
     margin: -90vw 2vw;
     right: 5;
     text-align: left;
@@ -420,11 +420,27 @@ html {
   background-color: white;
   color: black;
 }
-#videosLeft{
+#videosLeft {
   margin: 2vh auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 20px;
+}
+
+.copy {
+  width: 100%;
+  margin: -21px auto;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  background: #4966e0;
+  border-color: transparent;
+}
+
+.copy:hover {
+  background: #33479d;
 }
