@@ -28,18 +28,73 @@
     <section class="layout">
         <div class="header">
         </div>
-        <div class="leftSide"></div>
-        <div class="body">
-            <section class="videos">
+        <div class="leftSide">
+            <div id="videosLeft">
                 <div class="grow1" onclick="showShopifyVideos()">
                     <h1>Shopify</h1>
                     <img src="https://files.readme.io/10d1566-shopify-gray.svg" alt="Shopify">
                 </div>
-                <div id="videosShopify">
-                    <ul style="list-style: none inside;">
+                <div class="grow1" onclick="showWCVideos()">
+                    <h1>WooCommerce</h1>
+                    <img src="https://files.readme.io/ce76fc1-woocommerce-gray.svg" alt="WooCommerce" id="WP">
+                </div>
+                <div class="grow1">
+                    <h1>VTEX</h1>
+                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/VTEX_Logo.svg" alt="VTEX"
+                        id="VTEX">
+                </div>
+                <div class="grow1">
+                    <h1>Magento</h1>
+                    <img src="https://files.readme.io/dc16368-magento-gray.svg" alt="Magento">
+                </div>
+                <div class="grow1" onclick="showPSVideos()">
+                    <h1>PrestaShop</h1>
+                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/prestashop-48px-greyscale.svg"
+                        alt="PrestaShop">
+                </div>
+                <div class="grow1">
+                    <h1>TiendaNube</h1>
+                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/tiendanube_48_grey.svg"
+                        alt="TiendaNube" id="tiendanube" style="border-radius: 59px;">
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <section class="videos" id="videosCenter">
+                <div class="grow1" onclick="showShopifyVideos()">
+                    <h1>Shopify</h1>
+                    <img src="https://files.readme.io/10d1566-shopify-gray.svg" alt="Shopify">
+                </div>
+                <div class="grow1" onclick="showWCVideos()">
+                    <h1>WooCommerce</h1>
+                    <img src="https://files.readme.io/ce76fc1-woocommerce-gray.svg" alt="WooCommerce" id="WP">
+                </div>
+                <div class="grow1">
+                    <h1>VTEX</h1>
+                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/VTEX_Logo.svg" alt="VTEX"
+                        id="VTEX">
+                </div>
+                <div class="grow1">
+                    <h1>Magento</h1>
+                    <img src="https://files.readme.io/dc16368-magento-gray.svg" alt="Magento">
+                </div>
+                <div class="grow1" onclick="showPSVideos()">
+                    <h1>PrestaShop</h1>
+                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/prestashop-48px-greyscale.svg"
+                        alt="PrestaShop">
+                </div>
+                <div class="grow1">
+                    <h1>TiendaNube</h1>
+                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/tiendanube_48_grey.svg"
+                        alt="TiendaNube" id="tiendanube" style="border-radius: 59px;">
+                </div>
+            </section>
+            <section class = "videos" id="videosLinks">
+                <div >
+                    <ul id="videosShopify" style="list-style: none inside;">
                         <li>
                             <h1>Integrar Conekta + Shopify (plugin viejo)</h1>
-                            <input type="url" value="https://youtu.be/q6hYktEMCHY" disabled>
+                            <input type="url" value="https://youtu.be/q6hYktEMCHY" disabled="" style="margin: 23px auto;">
                         </li>
                         <li>
                             <h1>Desinstala nuestros plugins anteriores de Shopify</h1>
@@ -59,10 +114,6 @@
                         </li>
                     </ul>
                 </div>
-                <div class="grow1" onclick="showWCVideos()">
-                    <h1>WooCommerce</h1>
-                    <img src="https://files.readme.io/ce76fc1-woocommerce-gray.svg" alt="WooCommerce" id="WP">
-                </div>
                 <div id="videosWC">
                     <ul style="list-style: none inside;">
                         <li>
@@ -71,20 +122,6 @@
                         </li>
                     </ul>
                 </div>
-                <div class="grow1">
-                    <h1>VTEX</h1>
-                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/VTEX_Logo.svg" alt="VTEX"
-                        id="VTEX">
-                </div>
-                <div class="grow1">
-                    <h1>Magento</h1>
-                    <img src="https://files.readme.io/dc16368-magento-gray.svg" alt="Magento">
-                </div>
-                <div class="grow1" onclick="showPSVideos()">
-                    <h1>PrestaShop</h1>
-                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/prestashop-48px-greyscale.svg"
-                        alt="PrestaShop">
-                </div>
                 <div id="videosPS">
                     <ul style="list-style: none inside;">
                         <li>
@@ -92,11 +129,6 @@
                             <input type="url" value="https://youtu.be/wH8Dy9OB5JY" disabled>
                         </li>
                     </ul>
-                </div>
-                <div class="grow1">
-                    <h1>TiendaNube</h1>
-                    <img src="https://assets.conekta.com/cpanel/statics/assets/brands/logos/tiendanube_48_grey.svg"
-                        alt="TiendaNube" id="tiendanube" style="border-radius: 59px;">
                 </div>
             </section>
         </div>

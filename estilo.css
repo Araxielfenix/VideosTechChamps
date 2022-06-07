@@ -96,6 +96,7 @@
   }
   .leftSide {
     grid-area: leftSide;
+    width: 17%;
   }
   .body {
     grid-area: body;
@@ -123,6 +124,12 @@
   }
   #logo {
     margin: 1.3vh 0vh;
+  }
+  #videosLinks{
+    margin: -90vw 2vw;
+    right: 5;
+    text-align: left;
+    position: absolute;
   }
 }
 
@@ -299,9 +306,10 @@ html {
 }
 
 #videosShopify {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
 
@@ -390,7 +398,7 @@ html {
   color: #ffffff;
 }
 .footer {
-  position: absolute;
+  position: relative;
   margin: 30px auto;
   bottom: 5;
 }
@@ -411,4 +419,12 @@ html {
 .light-mode {
   background-color: white;
   color: black;
+}
+#videosLeft{
+  margin: 2vh auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
 }
